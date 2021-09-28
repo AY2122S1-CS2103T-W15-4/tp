@@ -255,15 +255,36 @@ _{Explain here how the data archiving feature will be implemented}_
 
 ### Product scope
 
-**Target user profile**:
+#### **Target user profile**:
 
+David Wong (a low-level telemarketer)
+* works as a telemarketer from home and makes internet calls on his computer
+* likes to import/export data quickly
+* wants to mark the contacts that he has successfully marketed to OR already called
+* wants to keep track of his progress
 * has a need to manage a significant number of contacts
 * prefer desktop apps over other types
 * can type fast
 * prefers typing to mouse interactions
 * is reasonably comfortable using CLI apps
 
-**Value proposition**: manage contacts faster than a typical mouse/GUI driven app
+<br>
+
+Anne Goh (a telemarketer manager)
+* works as a telemarketing supervisor from home
+* needs to pass lists of contacts to her subordinates to contact
+* wants to monitor the performance of her subordinates
+* has a need to manage a significant number of contacts
+* prefer desktop apps over other types
+* can type fast
+* prefers typing to mouse interactions
+* is reasonably comfortable using CLI apps
+
+**Value proposition**:
+* Able to import / export data into an easy-to-view format, useful for those who are not experienced at working with data files such as JSON / CSV / etc.
+* Easy to add/annotate details on users to keep track of user defined metrics
+* Ability to get analytics about metrics for progress-tracking
+
 
 
 ### User stories
