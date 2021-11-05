@@ -35,6 +35,10 @@ public class Tag {
      */
     public Tag(String tagName, String tagValue, Role[] editRoles, boolean isTestTag) {
         requireNonNull(tagName);
+        tagName = tagName.toLowerCase();
+        if (tagValue != null) {
+            tagValue = tagValue.toUpperCase();
+        }
         AppUtil.checkArgument(isAlphanumericTagName(tagName), ALPHANUMERIC_NAME_CONSTRAINTS);
         if (!isTestTag) {
             AppUtil.checkArgument(isNonReservedTagName(tagName), RESERVED_NAME_CONSTRAINTS.apply(tagName));

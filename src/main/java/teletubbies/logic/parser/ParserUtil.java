@@ -209,10 +209,10 @@ public class ParserUtil {
     public static Tag parseTagWithValue(String tag) throws ParseException {
         requireNonNull(tag);
         String[] nameValuePair = tag.trim().split(":");
-        String name = nameValuePair[0].trim();
+        String name = nameValuePair[0].trim().toLowerCase();
         String value = nameValuePair.length < 2
                 ? ""
-                : nameValuePair[1].trim();
+                : nameValuePair[1].trim().toUpperCase();
         if (!Tag.isAlphanumericTagName(name)) {
             throw new ParseException(Tag.MESSAGE_CONSTRAINTS);
         }
